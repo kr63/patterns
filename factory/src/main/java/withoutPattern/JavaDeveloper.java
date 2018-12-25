@@ -1,4 +1,4 @@
-package creational.factory.withoutPattern;
+package withoutPattern;
 
 class JavaDeveloper {
 

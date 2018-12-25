@@ -1,4 +1,4 @@
-package creational.factory.withPattern.developers;
+package withPattern.developers;
 
 public class PhpDeveloper implements Developer{
 

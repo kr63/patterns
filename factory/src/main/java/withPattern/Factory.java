@@ -1,12 +1,12 @@
-package creational.factory.withPattern;
+package withPattern;
 
-import creational.factory.withPattern.developers.Developer;
-import creational.factory.withPattern.factories.CppDeveloperFactory;
-import creational.factory.withPattern.factories.DeveloperFactory;
-import creational.factory.withPattern.factories.JavaDeveloperFactory;
-import creational.factory.withPattern.factories.PhpDeveloperFactory;
+import withPattern.developers.Developer;
+import withPattern.factories.CppDeveloperFactory;
+import withPattern.factories.DeveloperFactory;
+import withPattern.factories.JavaDeveloperFactory;
+import withPattern.factories.PhpDeveloperFactory;
 
-public class Program {
+public class Factory {
 
     public static void main(String[] args) {
         DeveloperFactory javaDeveloperFactory = createDeveloperBySpecialty("java");

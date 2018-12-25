@@ -1,6 +1,6 @@
-package creational.factory.withoutPattern;
+package withoutPattern;
 
-public class Program {
+public class FactoryWithoutPattern {
 
     public static void main(String[] args) {
         JavaDeveloper javaDeveloper = new JavaDeveloper();
