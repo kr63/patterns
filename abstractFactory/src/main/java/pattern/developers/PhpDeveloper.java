@@ -1,6 +1,6 @@
-package pattern.website;
+package pattern.developers;
 
-import pattern.Developer;
+import pattern.developers.Developer;
 
 public class PhpDeveloper implements Developer {
     @Override

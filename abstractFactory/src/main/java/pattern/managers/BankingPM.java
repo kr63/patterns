@@ -1,8 +1,6 @@
-package pattern.banking;
+package pattern.managers;
 
-import pattern.ProjectManager;
-
-public class BankingPM implements ProjectManager {
+public class BankingPM implements Manager {
     @Override
     public void manageProject() {
         System.out.println("Banking PM manages banging project!");

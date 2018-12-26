@@ -1,6 +1,4 @@
-package pattern.banking;
-
-import pattern.Tester;
+package pattern.testers;
 
 public class QATester implements Tester {
     @Override

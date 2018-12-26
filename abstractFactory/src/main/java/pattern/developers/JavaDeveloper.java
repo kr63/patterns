@@ -1,6 +1,4 @@
-package pattern.banking;
-
-import pattern.Developer;
+package pattern.developers;
 
 public class JavaDeveloper implements Developer {
     @Override

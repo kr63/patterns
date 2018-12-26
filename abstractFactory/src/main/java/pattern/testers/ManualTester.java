@@ -1,6 +1,4 @@
-package pattern.website;
-
-import pattern.Tester;
+package pattern.testers;
 
 public class ManualTester implements Tester {
     @Override

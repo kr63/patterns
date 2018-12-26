@@ -1,8 +1,6 @@
-package pattern.website;
+package pattern.managers;
 
-import pattern.ProjectManager;
-
-public class WebsitePM implements ProjectManager {
+public class WebsitePM implements Manager {
     @Override
     public void manageProject() {
         System.out.println("Website PM manages pattern.website project");

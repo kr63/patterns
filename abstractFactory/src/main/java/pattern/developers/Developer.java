@@ -1,4 +1,4 @@
-package pattern;
+package pattern.developers;
 
 public interface Developer {
 
