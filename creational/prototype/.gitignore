@@ -74,7 +74,7 @@ fabric.properties
 hs_err_pid*
 ### default template
 .idea
-*.iml
+prototype.iml
 out
 gen### Maven template
 target/
