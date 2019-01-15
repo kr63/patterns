@@ -1,4 +1,4 @@
-package example.remotes;
+package bridge.example.remotes;
 
 public interface Remote {
     void power();

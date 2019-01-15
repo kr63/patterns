@@ -1,10 +1,10 @@
-package example;
+package builder.example;
 
-import example.builders.CarBuilder;
-import example.builders.CarManualBuilder;
-import example.cars.Car;
-import example.cars.Manual;
-import example.director.Director;
+import builder.example.builders.CarBuilder;
+import builder.example.builders.CarManualBuilder;
+import builder.example.cars.Car;
+import builder.example.cars.Manual;
+import builder.example.director.Director;
 
 public class Demo {
     public static void main(String[] args) {

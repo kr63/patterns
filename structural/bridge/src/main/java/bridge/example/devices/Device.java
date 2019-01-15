@@ -1,4 +1,4 @@
-package example.devices;
+package bridge.example.devices;
 
 public interface Device {
     boolean isEnabled();

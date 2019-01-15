@@ -1,9 +1,9 @@
-package example.cars;
+package builder.example.cars;
 
-import example.builders.Engine;
-import example.builders.GpsNavigator;
-import example.builders.Transmission;
-import example.builders.TripComputer;
+import builder.example.builders.Engine;
+import builder.example.builders.GpsNavigator;
+import builder.example.builders.Transmission;
+import builder.example.builders.TripComputer;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor

@@ -1,6 +1,6 @@
-package example.builders;
+package builder.example.builders;
 
-import example.cars.Car;
+import builder.example.cars.Car;
 import lombok.Setter;
 
 @Setter

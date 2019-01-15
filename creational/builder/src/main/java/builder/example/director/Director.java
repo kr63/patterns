@@ -1,7 +1,7 @@
-package example.director;
+package builder.example.director;
 
-import example.builders.*;
-import example.cars.Type;
+import builder.example.builders.*;
+import builder.example.cars.Type;
 
 public class Director {
 

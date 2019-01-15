@@ -1,11 +1,12 @@
-package example.builders;
+package builder.example.builders;
 
-import example.cars.Manual;
-import example.cars.Type;
+import builder.example.cars.Car;
+import builder.example.cars.Type;
 import lombok.Setter;
 
 @Setter
-public class CarManualBuilder implements Builder {
+public class CarBuilder implements Builder {
+
     private Type type;
     private int seats;
     private Engine engine;
@@ -13,9 +14,8 @@ public class CarManualBuilder implements Builder {
     private TripComputer tripComputer;
     private GpsNavigator gpsNavigator;
 
-    public Manual getResult() {
-        return new Manual(type, seats, engine,
+    public Car getResults() {
+        return new Car(type, seats, engine,
                 transmission, tripComputer, gpsNavigator);
     }
-
 }

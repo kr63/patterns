@@ -1,10 +1,10 @@
-package example;
+package bridge.example;
 
-import example.devices.Device;
-import example.devices.Radio;
-import example.devices.Tv;
-import example.remotes.AdvancedRemote;
-import example.remotes.BasicRemote;
+import bridge.example.devices.Device;
+import bridge.example.devices.Radio;
+import bridge.example.devices.Tv;
+import bridge.example.remotes.AdvancedRemote;
+import bridge.example.remotes.BasicRemote;
 
 public class BridgeDemo {
     public static void main(String[] args) {

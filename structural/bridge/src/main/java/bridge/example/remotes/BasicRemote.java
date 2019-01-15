@@ -1,6 +1,6 @@
-package example.remotes;
+package bridge.example.remotes;
 
-import example.devices.Device;
+import bridge.example.devices.Device;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 

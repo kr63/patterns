@@ -1,6 +1,6 @@
-package example.builders;
+package builder.example.builders;
 
-import example.cars.Type;
+import builder.example.cars.Type;
 
 public interface Builder {
 
