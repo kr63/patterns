@@ -3,10 +3,11 @@ package composite.example.shapes;
 import java.awt.*;
 
 public class Circle extends BaseShape {
-    public int radius;
+    private int radius;
 
-    public Circle(int x, int y, Color color) {
+    public Circle(int x, int y, int radius, Color color) {
         super(x, y, color);
+        this.radius = radius;
     }
 
     @Override

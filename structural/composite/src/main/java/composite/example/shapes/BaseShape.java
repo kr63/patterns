@@ -2,13 +2,13 @@ package composite.example.shapes;
 
 import java.awt.*;
 
-public class BaseShape implements Shape {
-    public int x;
-    public int y;
-    public Color color;
+abstract class BaseShape implements Shape {
+    int x;
+    int y;
+    private Color color;
     private boolean selected = false;
 
-    public BaseShape(int x, int y, Color color) {
+    BaseShape(int x, int y, Color color) {
         this.x = x;
         this.y = y;
         this.color = color;
@@ -70,20 +70,19 @@ public class BaseShape implements Shape {
         }
     }
 
-    private void disableSelectionStyle(Graphics graphics) {
-        graphics.setColor(Color.LIGHT_GRAY);
+    void disableSelectionStyle(Graphics graphics) {
+        graphics.setColor(color);
+        Graphics2D g2 = (Graphics2D) graphics;
+        g2.setStroke(new BasicStroke());
+    }
 
+    void enableSelectionStyle(Graphics graphics) {
+        graphics.setColor(Color.LIGHT_GRAY);
         Graphics2D g2 = (Graphics2D) graphics;
         float[] dash1 = {2.0f};
         g2.setStroke(new BasicStroke(1.0f,
                 BasicStroke.CAP_BUTT,
                 BasicStroke.JOIN_MITER,
                 2.0f, dash1, 0.0f));
-    }
-
-    private void enableSelectionStyle(Graphics graphics) {
-        graphics.setColor(color);
-        Graphics2D g2 = (Graphics2D) graphics;
-        g2.setStroke(new BasicStroke());
     }
 }
