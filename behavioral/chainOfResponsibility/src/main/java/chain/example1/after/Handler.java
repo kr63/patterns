@@ -1,4 +1,4 @@
-package chain.example.after;
+package chain.example1.after;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package chain.example.before;
+package chain.example1.before;
 
 public class ChainDemoBefore {
     public static void main(String[] args) {
