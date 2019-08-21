@@ -14,6 +14,8 @@ public class ChainDemo2 {
         handler1.setNext(handler2);
         handler2.setNext(handler3);
 
+        handler1.process(new Request(-1));
         handler1.process(new Request(0));
+        handler1.process(new Request(1));
     }
 }
