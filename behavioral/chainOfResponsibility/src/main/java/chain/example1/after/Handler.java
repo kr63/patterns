@@ -8,11 +8,11 @@ class Handler {
     private int id = nextID++;
     private Handler nextInChain;
 
-    void add(Handler next) {
+    void add(Handler handler) {
         if (nextInChain == null) {
-            nextInChain = next;
+            nextInChain = handler;
         } else {
-            nextInChain.add(next);
+            nextInChain.add(handler);
         }
     }
 
