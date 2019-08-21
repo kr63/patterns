@@ -7,15 +7,18 @@ public class ZeroHandler implements Handler {
     private Handler nextInChain;
 
     @Override
-    public void setNext(Handler nextHandler) {
-        this.nextInChain = nextHandler;
+    public Handler linkWith(Handler handler) {
+        this.nextInChain = handler;
+        return handler;
     }
 
     @Override
     public void process(Request request) {
 
-        if (request.getNumber() != 0) nextInChain.process(request);
-
-        System.out.println("ZeroHandler: " + request.getNumber());
+        if (request.getNumber() == 0) {
+            System.out.println("ZeroHandler: " + request.getNumber());
+        } else {
+            nextInChain.process(request);
+        }
     }
 }

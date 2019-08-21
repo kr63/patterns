@@ -7,15 +7,16 @@ import chain.example2.processors.ZeroHandler;
 
 public class ChainDemo2 {
     public static void main(String[] args) {
-        Handler handler1 = new NegativeHandler();
-        Handler handler2 = new ZeroHandler();
-        Handler handler3 = new PositiveHandler();
+        Handler chain = new NegativeHandler();
+        Handler zeroHandler = new ZeroHandler();
+        Handler positiveHandler = new PositiveHandler();
 
-        handler1.setNext(handler2);
-        handler2.setNext(handler3);
+        chain
+            .linkWith(zeroHandler)
+            .linkWith(positiveHandler);
 
-        handler1.process(new Request(-1));
-        handler1.process(new Request(0));
-        handler1.process(new Request(1));
+        chain.process(new Request(-1));
+        chain.process(new Request(0));
+        chain.process(new Request(1));
     }
 }
